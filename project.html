@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Road Trip Planner</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Leaflet Routing -->
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css"/>
+
+  <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+  <h1>🚗 Road Trip Planner</h1>
+
+  <div class="input-section">
+    <input type="text" id="destinationInput" placeholder="Enter destination">
+    <button onclick="addDestination()">Add Destination</button>
+  </div>
+
+  <ul id="destinationList"></ul>
+
+  <div id="map"></div>
+
+  <div id="summary">
+    <h2>Trip Summary</h2>
+    <p id="totalDistance"></p>
+    <p id="totalTime"></p>
+    <p id="fuelNeeded"></p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+  <script src="project.js"></script>
+
+</body>
+</html>
